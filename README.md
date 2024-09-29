@@ -1,8 +1,8 @@
-Optimal Production and Order Control in Multi-Product Systems
+# Optimal Production and Order Control in Multi-Product Systems
 
 This repository contains Python code for simulating and optimizing production and order control policies in a multi-product supply chain. The project models a system using a Markov Decision Process (MDP) to minimize operational costs associated with production, inventory, and order management.
 
-Introduction
+# Introduction
 
 This project simulates an assembly-to-order (ATO) production system where a manufacturer receives parts from a supplier and assembles products based on customer orders. The system aims to minimize costs associated with inventory holding, rejected orders, unsatisfied demand, and production. By using an MDP framework, it identifies optimal policies for:
 
@@ -10,7 +10,7 @@ Ordering parts from a supplier.
 Accepting or rejecting customer orders.
 Scheduling order fulfillment based on the system's current state.
 
-Features
+# Features
 
 Markov Decision Process (MDP): Models optimal decisions for production and order management.
 Value Iteration Algorithm: Efficiently solves the MDP to determine optimal policies.
@@ -35,24 +35,6 @@ This file provides an example of how to use the StateAction class to initialize 
 stationaction.py
 Contains the StateAction class, which handles all the state transitions, value calculations, and control decisions for the MDP-based system.
 
-Installation
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/yourusername/multi-product-production-control.git
-Install the required dependencies:
-bash
-Copy code
-pip install -r requirements.txt
-Dependencies include:
-numpy
-pandas
-Usage
-Modify the system parameters in main.py to fit your production system.
-Run the simulation:
-bash
-Copy code
-python main.py
 Check the results in the state_values.csv and simulation_results.csv files.
 Example Execution
 bash
@@ -60,7 +42,8 @@ Copy code
 python example.py
 This will run a small test with predefined parameters and output the results of the value iteration to state_values.csv.
 
-Parameters
+# Parameters
+
 The system is governed by several key parameters, which can be adjusted in main.py and example.py:
 
 states: An array representing the capacities of the buffers in the system (e.g., [10, 5, 5] for three buffers).
