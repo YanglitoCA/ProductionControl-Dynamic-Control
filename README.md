@@ -13,34 +13,40 @@ Scheduling order fulfillment based on the system's current state.
 # Features
 
 Markov Decision Process (MDP): Models optimal decisions for production and order management.
+
 Value Iteration Algorithm: Efficiently solves the MDP to determine optimal policies.
+
 Simulation: Runs simulations over a given time horizon to evaluate system performance and calculate total costs and profits.
+
 Dynamic Control Policies: Generates control decisions based on system states, buffer capacities, and incoming order rates.
+
 CSV Output: Saves simulation results, including state vectors and control actions, to CSV files for analysis.
-Project Structure
-graphql
-Copy code
-.
+
+# Project Structure
+
 ├── main.py           # Main simulation script
+
 ├── example.py        # Example usage of the StateAction class
+
 ├── stationaction.py  # Contains the StateAction class for state and control logic
+
 ├── state_values.csv  # Outputs state values from value iteration (generated)
+
 └── simulation_results.csv  # Outputs simulation results (generated)
+
 main.py
+
 This is the main script that sets up the parameters for the production system, runs the value iteration, and simulates the system over a specified time period. It saves the results to CSV files.
 
 example.py
+
 This file provides an example of how to use the StateAction class to initialize system parameters and run the value iteration algorithm.
 
 stationaction.py
+
 Contains the StateAction class, which handles all the state transitions, value calculations, and control decisions for the MDP-based system.
 
 Check the results in the state_values.csv and simulation_results.csv files.
-Example Execution
-bash
-Copy code
-python example.py
-This will run a small test with predefined parameters and output the results of the value iteration to state_values.csv.
 
 # Parameters
 
