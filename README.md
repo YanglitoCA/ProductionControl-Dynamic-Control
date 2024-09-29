@@ -1,22 +1,17 @@
-Optimal Production and Order Control in Multi-Product Systems
+##Optimal Production and Order Control in Multi-Product Systems
+
 This repository contains Python code for simulating and optimizing production and order control policies in a multi-product supply chain. The project models a system using a Markov Decision Process (MDP) to minimize operational costs associated with production, inventory, and order management.
 
-Table of Contents
-Introduction
-Features
-Project Structure
-Installation
-Usage
-Parameters
-Simulation Results
-License
-Introduction
+#Introduction
+
 This project simulates an assembly-to-order (ATO) production system where a manufacturer receives parts from a supplier and assembles products based on customer orders. The system aims to minimize costs associated with inventory holding, rejected orders, unsatisfied demand, and production. By using an MDP framework, it identifies optimal policies for:
 
 Ordering parts from a supplier.
 Accepting or rejecting customer orders.
 Scheduling order fulfillment based on the system's current state.
-Features
+
+#Features
+
 Markov Decision Process (MDP): Models optimal decisions for production and order management.
 Value Iteration Algorithm: Efficiently solves the MDP to determine optimal policies.
 Simulation: Runs simulations over a given time horizon to evaluate system performance and calculate total costs and profits.
